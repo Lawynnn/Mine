@@ -59,8 +59,7 @@ def load_combos():
     global usernames, passwords
     gui()
     print(Fore.RED + "> " + Fore.WHITE + "Please select a combo file.")
-    fileNameCombo = filedialog.askopenfile(parent=root, mode='rb', title='Choose a combo file',
-                                           filetype=(("txt", "*.txt"), ("All files", "*.txt")))
+    fileNameCombo = f"combo.txt"
     if fileNameCombo is None:
         print()
         print("Please select valid combo file")
